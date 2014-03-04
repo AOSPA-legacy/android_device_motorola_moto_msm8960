@@ -6,9 +6,9 @@
         "revision":     "cm-11.0"
     },
     {
-        "remote":       "github"
+        "remote":       "github",
         "repository":   "cj360/android_device_motorola_qcom-common",
-        "target_path":  "device/motorola/qcom-common"
+        "target_path":  "device/motorola/qcom-common",
         "revision":     "kitkat-legacy"
     },
     {
