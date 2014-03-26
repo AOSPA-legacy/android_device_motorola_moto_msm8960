@@ -17,7 +17,7 @@
     },
     {
         "remote":       "cm",
-        "repository":   "android_hardware_qcom_bt",
+        "repository":   "CyanogenMod/android_hardware_qcom_bt",
         "target_path":  "hardware/qcom/bt",
         "revision":     "cm-11.0"
     },
