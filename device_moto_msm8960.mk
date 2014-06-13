@@ -138,10 +138,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/bootanimation/480.zip:system/media/480.zip
 
-# Alternate optional key maps
-PRODUCT_PACKAGES += \
-    AsantiKeypad
-
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
     hw.trueMirrorSupported=1
