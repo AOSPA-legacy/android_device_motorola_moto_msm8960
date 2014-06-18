@@ -7,9 +7,9 @@
     },
     {
         "remote":       "github",
-	      "repository":   "AOSPA-legacy/android_device_motorola_qcom-common",
+	"repository":   "AOSPA-legacy/android_device_motorola_qcom-common",
         "target_path":  "device/motorola/qcom-common",
-	      "revision":     "kitkat"
+	"revision":     "kitkat"
     },
     {
         "remote":       "github",
