@@ -119,7 +119,8 @@ PRODUCT_COPY_FILES += \
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+    $(LOCAL_PATH)/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
+    $(LOCAL_PATH)/ui.zip:system/ui.zip
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
