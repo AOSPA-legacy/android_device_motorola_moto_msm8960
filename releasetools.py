@@ -27,6 +27,6 @@ def FullOTA_InstallEnd(info):
 	info.script.AppendExtra('ifelse(is_substring("XT901", getprop("ro.boot.modelno")), run_program("/sbin/sh", "-c", "busybox cp -R /system/xt901/* /system/"));')
 	info.script.AppendExtra('ifelse(is_substring("XT92", getprop("ro.boot.modelno")) || is_substring("vanquish", getprop("ro.boot.device")) || is_substring("vanquish", getprop("ro.product.device")) || is_substring("xt92", getprop("ro.product.device")), run_program("/sbin/sh", "-c", "busybox mv /system/etc/snd_soc_msm/snd_soc_msm_2x_xt92x /system/etc/snd_soc_msm/snd_soc_msm_2x"));')
 	info.script.AppendExtra('delete("/system/etc/snd_soc_msm/snd_soc_msm_2x_xt92x");')
-	info.script.AppendExtra('ifelse(is_substring("240", getprop("ro.sf.lcd_density")), run_program("/sbin/sh", "-c", "busybox mkdir -p /data/media/TWRP/theme"));')
-	info.script.AppendExtra('ifelse(is_substring("240", getprop("ro.sf.lcd_density")), run_program("/sbin/sh", "-c", "busybox mv /system/ui.zip /data/media/TWRP/theme/ui.zip"));')
+	info.script.AppendExtra('ifelse(is_substring("240", getprop("ro.sf.lcd_density")), run_program("/sbin/sh", "-c", "busybox mkdir -p /data/media/0/TWRP/theme"));')
+	info.script.AppendExtra('ifelse(is_substring("240", getprop("ro.sf.lcd_density")), run_program("/sbin/sh", "-c", "busybox mv /system/ui.zip /data/media/0/TWRP/theme/ui.zip"));')
 	info.script.AppendExtra('delete("/system/ui.zip");')
