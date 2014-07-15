@@ -114,10 +114,6 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sh
 
-# Ramdisk overrides
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:root/init.qcom.usb.rc
-
 # TWRP
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
