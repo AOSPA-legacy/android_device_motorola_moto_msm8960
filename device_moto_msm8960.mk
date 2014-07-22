@@ -107,11 +107,8 @@ PRODUCT_PACKAGES += \
     init.mmi.boot.sh \
     init.mmi.touch.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh
-
-# Ramdisk overrides
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:root/init.qcom.usb.rc
+    init.qcom.sh \
+    init.qcom.wifi.sh
 
 # TWRP
 PRODUCT_COPY_FILES += \
