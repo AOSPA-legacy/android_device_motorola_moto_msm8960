@@ -70,6 +70,11 @@ PRODUCT_PACKAGES += \
     DevicePerformanceSettingsHelper \
     sqlite3
 
+# Symlinks
+PRODUCT_PACKAGES += \
+    mbhc.bin \
+    wcd9310_anc.bin
+
 # EGL config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/egl.cfg:system/lib/egl/egl.cfg
@@ -107,8 +112,7 @@ PRODUCT_PACKAGES += \
     init.mmi.boot.sh \
     init.mmi.touch.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh \
-    init.qcom.wifi.sh
+    init.qcom.sh
 
 # TWRP
 PRODUCT_COPY_FILES += \
@@ -134,6 +138,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/motorola/qcom-common/idc/atmxt-i2c.idc:recovery/root/vendor/firmware/atmxt-i2c.idc \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/atmxt-r2.tdat:recovery/root/vendor/firmware/atmxt-r2.tdat
+
+# Include hdpi boot animation in the zip
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/bootanimation/800x480.zip:system/media/bootanimation.zip
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
