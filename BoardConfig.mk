@@ -40,8 +40,7 @@ TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/motorola/moto_msm8960/init/init_moto_msm8960.c
+TARGET_INIT_VENDOR_LIB := libinit_moto_msm8960
 
 TARGET_QCOM_MEDIA_VARIANT := caf
 TARGET_USES_WCNSS_CTRL := true
