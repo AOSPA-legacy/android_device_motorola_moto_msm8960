@@ -8,6 +8,10 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
+# Include 960x540 boot animation in the zip
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bootanimation/540.zip:system/media/540.zip
+
 # Release name
 PRODUCT_NAME := cm_moto_msm8960
 
