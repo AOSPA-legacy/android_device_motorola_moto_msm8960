@@ -100,8 +100,8 @@ void vendor_load_properties()
         /* xt907 */
         property_set("ro.product.device", "smq");
         property_set("ro.product.model", "DROID RAZR M");
-        property_set("ro.build.description", "smq_vzw-user 4.4.2 KDA20.62-10.1 10 release-keys");
-        property_set("ro.build.fingerprint", "motorola/smq_vzw/smq:4.4.2/KDA20.62-10.1/10:user/release-keys");
+        property_set("ro.build.description", "smq_vzw-user 4.4.2 KDA20.62-15.1 15 release-keys");
+        property_set("ro.build.fingerprint", "motorola/XT907_verizon/scorpion_mini:4.4.2/KDA20.62-15.1/15:user/release-keys");
         property_set("ro.sf.lcd_density", "240");
     }
 
