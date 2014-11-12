@@ -15,11 +15,11 @@
         "remote":       "github",
         "repository":   "cj360/kernel_motorola_msm8960dt-common",
         "target_path":  "kernel/motorola/msm8960dt-common",
-        "revision":     "kitkat"
+        "revision":     "lollipop"
     },
     {
-        "remote":       "blobs",
-        "repository":   "proprietary_vendor_motorola",
+        "remote":       "github",
+        "repository":   "razrqcom-dev-team/proprietary_vendor_motorola",
         "target_path":  "vendor/motorola",
         "revision":     "cm-11.0"
     }
