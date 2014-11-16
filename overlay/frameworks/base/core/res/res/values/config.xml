@@ -47,8 +47,6 @@
          a keyboard is present. -->
     <bool name="config_showMenuShortcutsWhenKeyboardPresent">false</bool>
 
-    <integer name="config_keyboardBrightnessSettingDefault">255</integer>
-
     <!-- Enables swipe versus poly-finger touch disambiguation in the KeyboardView -->
     <bool name="config_swipeDisambiguation">true</bool>
 
@@ -59,5 +57,11 @@
     <bool name="config_enableNetworkLocationOverlay" translatable="false">false</bool>
     <string name="config_networkLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
     <bool name="config_enableFusedLocationOverlay" translatable="false">false</bool>
+
+    <!-- <integer name="config_keyboardBrightnessSettingDefault">255</integer> -->
+
+    <!-- Performance profiles
+    <string name="config_perf_profile_prop">sys.perf.profile</string>
+    <string name="config_perf_profile_default_entry">1</string> -->
 
 </resources>
