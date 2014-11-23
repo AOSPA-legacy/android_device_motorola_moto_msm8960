@@ -38,6 +38,8 @@ LOCAL_PATH := device/motorola/moto_msm8960
 
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
+TARGET_NO_ADAPTIVE_PLAYBACK := true
+
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_moto_msm8960
