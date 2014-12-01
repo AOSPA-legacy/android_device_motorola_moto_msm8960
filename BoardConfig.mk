@@ -21,6 +21,9 @@
 # definition file).
 #
 
+# QCOM SELinux policy
+include device/qcom/sepolicy/sepolicy.mk
+
 # inherit from the proprietary version
 -include vendor/motorola/moto_msm8960/BoardConfigVendor.mk
 
@@ -52,7 +55,7 @@ BOARD_USES_LEGACY_MMAP := true
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8960dt-common
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := msm8960_mmi_selinux_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2 vmalloc=400M androidboot.write_protect=0 zcache androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2 vmalloc=400M androidboot.write_protect=0 zcache
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --dt $(LOCAL_PATH)/dt.img
@@ -104,4 +107,33 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 DEVICE_RESOLUTION := 720x1280
 
-DEX_PREOPT_DEFAULT := true
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/motorola/moto_msm8960/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    atvc.te \
+    atvc_core.te \
+    batt_health.te \
+    bootmodem.te \
+    device.te \
+    file.te \
+    file_contexts \
+    hw_revs.te \
+    keystore.te \
+    location.te \
+    mmi-boot-sh.te \
+    mmi-touch-sh.te \
+    mm-pp-daemon.te \
+    mm-qcamerad.te \
+    mpdecision.te \
+    netd.te \
+    platform_app.te \
+    property_contexts \
+    property.te \
+    qdumpd.te \
+    sensors.te \
+    surfaceflinger.te \
+    thermal-engine.te \
+    ueventd.te \
+    whisperd.te
