@@ -73,11 +73,6 @@ PRODUCT_PACKAGES += \
     DevicePerformanceSettingsHelper \
     sqlite3
 
-# Symlinks
-PRODUCT_PACKAGES += \
-    mbhc.bin \
-    wcd9310_anc.bin
-
 # EGL config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/egl.cfg:system/lib/egl/egl.cfg
@@ -112,7 +107,8 @@ PRODUCT_PACKAGES += \
     init.mmi.boot.sh \
     init.mmi.touch.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh
+    init.qcom.sh \
+    init.qcom.wifi.sh
 
 # Scripts
 PRODUCT_COPY_FILES += \

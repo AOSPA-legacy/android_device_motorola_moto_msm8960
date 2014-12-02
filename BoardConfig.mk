@@ -45,7 +45,8 @@ TARGET_NO_ADAPTIVE_PLAYBACK := true
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_moto_msm8960
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := device/motorola/moto_msm8960/init/init_moto_msm8960.c
 
 TARGET_USES_WCNSS_CTRL := true
 
@@ -102,7 +103,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_RECOVERY_FSTYPE_MOUNT_OPTIONS := ext4=max_batch_time=0,commit=1,data=ordered,barrier=1,errors=panic,nodelalloc|f2fs=errors=recover
 
 # TWRP
-TW_USE_TOOLBOX := true
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 DEVICE_RESOLUTION := 720x1280
