@@ -37,6 +37,8 @@ PRODUCT_COPY_FILES += \
 # Inherit from moto_msm8960 device
 $(call inherit-product, device/motorola/moto_msm8960/device_moto_msm8960.mk)
 
+PRODUCT_PROPERTY_OVERRIDES += ro.build.product=moto_msm8960
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := moto_msm8960
 PRODUCT_NAME := full_moto_msm8960
