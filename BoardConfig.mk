@@ -101,7 +101,9 @@ TARGET_RECOVERY_FSTYPE_MOUNT_OPTIONS := ext4=max_batch_time=0,commit=1,data=orde
 # TWRP
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+# Needs to be changed for M
 DEVICE_RESOLUTION := 720x1280
+#DEVICE_RESOLUTION := 540x960
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \

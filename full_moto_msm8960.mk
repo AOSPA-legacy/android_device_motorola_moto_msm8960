@@ -23,21 +23,10 @@
 # lines, full and moto_msm8960, hence its name.
 #
 
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Media
-PRODUCT_COPY_FILES += \
-    device/motorola/moto_msm8960/config/media_codecs.xml:system/etc/media_codecs.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml
-
 # Inherit from moto_msm8960 device
 $(call inherit-product, device/motorola/moto_msm8960/device_moto_msm8960.mk)
-
-PRODUCT_PROPERTY_OVERRIDES += ro.build.product=moto_msm8960
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := moto_msm8960
