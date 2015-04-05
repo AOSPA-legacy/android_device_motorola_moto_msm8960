@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
     init.qcom.wifi.sh
 
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
-$(warning "USING F2FS for userdata")
+#$(warning "USING F2FS for userdata")
 
 # This ensures the needed build tools are available.
 # TODO: make non-linux builds happy with external/f2fs-tool; system/extras/f2fs_utils
