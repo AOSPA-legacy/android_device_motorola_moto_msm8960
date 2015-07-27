@@ -13,9 +13,9 @@
     },
     {
         "remote":       "github",
-        "repository":   "cj360/kernel_motorola_msm8960dt-common",
+        "repository":   "CyanogenMod/android_kernel_motorola_msm8960dt-common",
         "target_path":  "kernel/motorola/msm8960dt-common",
-        "revision":     "kitkat"
+        "revision":     "cm-11.0"
     },
     {
         "remote":       "blobs",
